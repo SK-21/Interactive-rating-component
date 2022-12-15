@@ -12,24 +12,23 @@ submitBtn.addEventListener('click',trigger)
 
 
 function ratingNum1(){
-// let ratingNum1 = document.getElementsByClassName("rating-1");
-
 ratingSt.style.background= "hsl(25, 97%, 53%)";
 ratingSt.style.color="#fff"
 const ratingValue =ratingSt.value;
-thankYou.textContent=`You have got 1 out of 5`
+thankYou.textContent=`You selected 1 out of 5`
 
 }
 
 const ratingSt = document.querySelector(".rating-1");
 ratingSt.addEventListener("click",ratingNum1);
 function ratingNum2(){
-    // let ratingNum1 = document.getElementsByClassName("rating-1");
     
     ratingSt2.style.background= "hsl(25, 97%, 53%)";
     ratingSt2.style.color="#fff"
+    ratingSt.style.background= "hsl(216, 12%, 54%)";
+    ratingSt.style.color="#fff"
     const ratingValue =ratingSt.value;
-    thankYou.textContent=`You have got 2 out of 5`
+    thankYou.textContent=`You selected 2 out of 5`
     
     }
     
@@ -38,35 +37,48 @@ function ratingNum2(){
 
 
 ``
-
-
-
-
-
-// function ratingSelect(){
+function ratingNum3(){
     
-//     let ratingNum = document.getElementsByClassName("rating");
-
-//     for(let i =0;i<ratingNum.length;i++){
-
-//         ratingNum[i].style.background= "hsl(25, 97%, 53%)";
-//         ratingNum[i].style.color="#fff"
+    ratingSt3.style.background= "hsl(25, 97%, 53%)";
+    ratingSt3.style.color="#fff"
+    ratingSt2.style.background= "hsl(216, 12%, 54%)";
+    ratingSt2.style.color="#fff"
+    const ratingValue =ratingSt.value;
+    thankYou.textContent=`You selected 3 out of 5`
     
-//         thankYou.textContent="You have got 1 out of 5"
-//         console.log(ratingNum[i])
-//     }
-
-   
-
-// }
-
-// const ratingSt = document.getElementsByClassName("rating");
-// ratingSt.addEventListener("click",ratingSelect);
+    }
+    
+    const ratingSt3 = document.querySelector(".rating-3");
+    ratingSt3.addEventListener("click",ratingNum3);
 
 
+    function ratingNum4(){
+        
+        ratingSt4.style.background= "hsl(25, 97%, 53%)";
+        ratingSt4.style.color="#fff"
+        ratingSt3.style.background= "hsl(216, 12%, 54%)";
+        ratingSt3.style.color="#fff"
+        const ratingValue =ratingSt.value;``
+        thankYou.textContent=`You selected 4 out of 5`
+        
+        }
+        
+        const ratingSt4 = document.querySelector(".rating-4");
+        ratingSt4.addEventListener("click",ratingNum4);
 
-// let ratingValue = document.getElementById('we');
-// let val = ratingValue.value;
 
-// document.getElementById("show-rating").innerHTML=`You selected ${val} out of 5`;
-   
+        function ratingNum5(){
+            
+            ratingSt5.style.background= "hsl(25, 97%, 53%)";
+            ratingSt4.style.background= "hsl(216, 12%, 54%)";
+            ratingSt4.style.color="#fff"
+            ratingSt5.style.color="#fff"
+            const ratingValue =ratingSt.value;
+            thankYou.textContent=`You selected 5 out of 5`
+            
+            }
+            
+            const ratingSt5 = document.querySelector(".rating-5");
+            ratingSt5.addEventListener("click",ratingNum5);
+
+
